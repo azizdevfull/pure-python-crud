@@ -1,1 +1,5 @@
-# pure-python-crud
+### Installation
+
+```bash
+python main.py
+```

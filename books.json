@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Robinzon Kruzo",
+    "genre": "Tragedia",
+    "author": "Daniel Defo",
+    "price": 45
+  },
+  {
+    "id": 2,
+    "name": "War and Peace",
+    "genre": "Historical fiction",
+    "author": "Leo Tolstoy",
+    "price": 60
+  },
+  {
+    "id": 3,
+    "name": "To Kill a Mockingbird",
+    "genre": "Classic",
+    "author": "Harper Lee",
+    "price": 30
+  },
+  {
+    "name": "Robinzon Kruzo2",
+    "genre": "Tragedia2",
+    "author": "Daniel Defo",
+    "price": 45,
+    "id": 4
+  }
+]

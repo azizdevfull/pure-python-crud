@@ -13,6 +13,20 @@ class Books(BaseHTTPRequestHandler):
             self.send_header('Content-Type', 'application/json')
             self.end_headers()
             self.wfile.write(json.dumps(data).encode())
+        elif self.path.startswith('/books/'):
+            book_id = int(self.path.split('/')[-1])
+            
+            for item in data:
+                if item['id'] == book_id:
+                    self.send_response(200)
+                    self.send_header('Content-Type', 'application/json')
+                    self.end_headers()
+                    self.wfile.write(json.dumps(item).encode())
+                    break
+            else:
+                self.send_error(404)
+        else:
+            self.send_error(404)
 
 
 

@@ -23,5 +23,14 @@
         "description": "json",
         "detail": "json",
         "documentation": {}
+    },
+    {
+        "label": "data",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "data = [\n    {\"id\": 1, \"name\": \"Robinzon Kruzo\", \"genre\": \"Tragedia\", \"author\": \"Daniel Defo\", \"price\": 45}\n]",
+        "detail": "main",
+        "documentation": {}
     }
 ]

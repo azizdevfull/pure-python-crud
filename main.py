@@ -63,6 +63,19 @@ class Books(BaseHTTPRequestHandler):
         else:
             self.send_error(404)
             
+    def do_DELETE(self):
+        if self.path.startswith('/books/'):
+            book_id = int(self.path.split('/')[-1])
+            for i, item in enumerate(data):
+                if item['id'] == book_id:
+                    del data[i]
+                    self.send_response(204)
+                    self.end_headers()
+                    break
+            else:
+                self.send_error(404)
+        else:
+            self.send_error(404)
 
 
 
